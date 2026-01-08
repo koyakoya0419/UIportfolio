@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UIデザイナーのポートフォリオサイト - シフト管理アプリを中心とした作品紹介">
+    <title>UI Designer Portfolio | シフト管理アプリ</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ナビゲーション -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">UI Designer Portfolio</a>
+            <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#works" class="nav-link">Works</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle animate-fade-in">UI/UX Designer</p>
+                <h1 class="hero-title animate-slide-up">
+                    ユーザーの<br>
+                    <span class="highlight">『きっかけ』を作る</span><br>
+                    デザインを
+                </h1>
+                <p class="hero-description animate-fade-in-delay">
+                    問題解決のためのデザイン。<br>
+                    小さな煩わしさを取り除き、人々の生活を豊かにするプロダクトを創ります。
+                </p>
+                <div class="hero-buttons animate-fade-in-delay-2">
+                    <a href="#works" class="btn btn-primary">作品を見る</a>
+                    <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper animate-float">
+                    <div class="gradient-circle gradient-purple"></div>
+                    <div class="gradient-circle gradient-green"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="スクロールダウン">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Aboutセクション -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">デザイナーとしての想い</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-subtitle">「なぜ」を問い続けるデザイン</h3>
+                    <p>
+                        デザインの役割は「美しさ」ではなく「問題解決」だと考えています。<br>
+                        日常の中で見過ごされがちな小さな不便さに目を向け、「なぜこの操作が必要なのか?」「もっと楽にできないか?」と問い続けることで、本質的な価値を持つプロダクトを生み出すことができると信じています。
+                    </p>
+                    <p>
+                        ユーザーリサーチから得た洞察をもとに、論理的な情報設計と直感的なビジュアルデザインを融合させ、使う人の心に寄り添うインターフェースを追求しています。
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>課題発見力</h4>
+                            <p>日常に潜む不便さを見つけ出し、本質的な問題を定義する力</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>ユーザー視点</h4>
+                            <p>多様なユーザーの立場に立ち、真のニーズを理解する姿勢</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>デザイン実装</h4>
+                            <p>論理と感性を両立させた、使いやすく美しいUIの実現</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Worksセクション -->
+    <section id="works" class="works section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Works</span>
+                <h2 class="section-title">制作実績</h2>
+                <p class="section-description">
+                    ユーザーの課題を解決するために設計したプロダクト
+                </p>
+            </div>
+
+            <!-- プロジェクトタブ -->
+            <div class="project-tabs">
+                <button class="tab-btn active" data-project="shift-app">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>シフト管理アプリ</span>
+                </button>
+                <button class="tab-btn" data-project="cafe-site">
+                    <i class="fas fa-coffee"></i>
+                    <span>カフェHP</span>
+                </button>
+            </div>
+
+            <!-- プロジェクト1: シフト管理アプリ -->
+            <div class="project-content active" id="shift-app">
+                <div class="project-header">
+                    <h3 class="project-title">シフト入力とアラーム設定が連動するアプリ</h3>
+                    <p class="project-subtitle">シフト制で働く人々の「毎回アラームを手動設定する煩わしさ」を解決</p>
+                </div>
+
+                <!-- 画像スライダー -->
+                <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide active">
+                        <img src="images/home.png" alt="カレンダー画面 - シフトを色付きドットで可視化">
+                        <div class="slide-caption">カレンダー画面<br>シフトを色付きドットで可視化</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/register.png" alt="新規登録画面 - 直感的な入力フォーム設計">
+                        <div class="slide-caption">新規登録画面<br>直感的な入力フォーム設計</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/setting.png" alt="設定画面 - 柔軟なカスタマイズ機能">
+                        <div class="slide-caption">設定画面<br>柔軟なカスタマイズ機能</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/date.png" alt="カレンダー詳細 - シフト情報の一覧表示">
+                        <div class="slide-caption">カレンダー詳細<br>シフト情報の一覧表示</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/confirm.png" alt="シフト詳細表示 - 複数職場の管理対応">
+                        <div class="slide-caption">シフト詳細表示<br>複数職場の管理対応</div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" id="prevBtn" aria-label="前のスライド">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next" id="nextBtn" aria-label="次のスライド">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+
+            <!-- プロジェクト詳細 -->
+            <div class="project-details">
+                <div class="detail-section">
+                    <h3><i class="fas fa-bullseye"></i> 解決した課題</h3>
+                    <p>
+                        アルバイトや複数の仕事を掛け持ちする人は、日によって異なる勤務時間に合わせて毎回アラームを設定し直す必要があります。この繰り返し作業が、<strong>うっかり忘れ</strong>や<strong>計算ミス</strong>による遅刻リスクを生んでいました。
+                    </p>
+                    <div class="solution-box">
+                        <h4>本アプリの解決策</h4>
+                        <p>シフトを入力するだけで、準備時間を考慮した最適なアラーム時刻が自動算出・設定されます。「入力の一元化」により、ユーザーは考える必要がなくなります。</p>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><i class="fas fa-star"></i> 主要機能とデザインの工夫</h3>
+                    <div class="features-grid">
+                        <div class="feature-detail">
+                            <div class="feature-number">01</div>
+                            <h4>カレンダー×シフト可視化</h4>
+                            <p>月間カレンダーに色付きドットでシフトの有無を表示。日付タップで詳細を確認でき、ひと目で予定を把握できます。</p>
+                        </div>
+                        <div class="feature-detail">
+                            <div class="feature-number">02</div>
+                            <h4>複数職場対応</h4>
+                            <p>職場ごとに色分け表示(職場A:紫/職場B:緑)し、異なる準備時間やアラーム音を設定可能。ダブルブッキング防止にも貢献します。</p>
+                        </div>
+                        <div class="feature-detail">
+                            <div class="feature-number">03</div>
+                            <h4>柔軟なアラーム設定</h4>
+                            <p>起床用・出発用など、複数のアラーム時間を追加できる設計。ユーザーの生活リズムに合わせたパーソナライゼーションを実現しました。</p>
+                        </div>
+                        <div class="feature-detail">
+                            <div class="feature-number">04</div>
+                            <h4>入力の最適化</h4>
+                            <p>必須項目を赤いインジケーターで明示し、迷わず入力できる導線設計。「準備時間」の概念導入により、システムが自動計算を担います。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><i class="fas fa-paint-brush"></i> UIデザインの意図</h3>
+                    <div class="design-principles">
+                        <div class="principle-item">
+                            <h4>色彩設計</h4>
+                            <ul>
+                                <li><span class="color-dot gray"></span> グレーヘッダー: 信頼性と落ち着きを表現</li>
+                                <li><span class="color-dot purple"></span> 紫のアクセント: 職場識別と視認性向上</li>
+                                <li><span class="color-dot green"></span> 緑のアクセント: 複数職場の区別を明確化</li>
+                                <li>色だけで情報を理解できる直感的なインターフェース</li>
+                            </ul>
+                        </div>
+                        <div class="principle-item">
+                            <h4>レイアウト設計</h4>
+                            <ul>
+                                <li>一貫したフォント・余白・ボタンデザインで学習コストを最小化</li>
+                                <li>スクロール型フォームで入力項目を段階的に提示</li>
+                                <li>タップ領域を十分に確保し、操作ミスを防止</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h3><i class="fas fa-heart"></i> このアプリに込めた想い</h3>
+                    <p class="thought-text">
+                        デザインの役割は「美しさ」ではなく「問題解決」だと考えています。小さな煩わしさを取り除くことで、人々の朝をもっと穏やかにしたい——そんな想いから、このアプリを設計しました。<br><br>
+                        ユーザーの日常に寄り添い、テクノロジーで生活を豊かにするプロダクトを創り続けることが、私のデザイナーとしての目標です。
+                    </p>
+                </div>
+            </div>
+            </div>
+            <!-- プロジェクト1終了 -->
+
+            <!-- プロジェクト2: カフェHP -->
+            <div class="project-content" id="cafe-site">
+                <div class="project-header">
+                    <h3 class="project-title">カフェ「RISE」のWebサイト</h3>
+                    <p class="project-subtitle">地域に愛されるカフェの魅力を伝えるブランディングサイト</p>
+                    <a href="https://kensyu.whitesnow.jp/koya_ito/" target="_blank" class="btn btn-primary" style="margin-top: 20px;">
+                        <i class="fas fa-external-link-alt"></i> サイトを見る
+                    </a>
+                </div>
+
+                <!-- カフェHP画像 -->
+                <div class="cafe-showcase">
+                    <div class="cafe-image-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span>画像をスクロールして全体をご覧いただけます</span>
+                    </div>
+                    <img src="images/cafe-overview.jpg" alt="カフェRISEのWebサイト全体像" class="cafe-full-image">
+                </div>
+
+                <!-- プロジェクト詳細 -->
+                <div class="project-details">
+                    <div class="detail-section">
+                        <h3><i class="fas fa-bullseye"></i> プロジェクトの目的</h3>
+                        <p>
+                            地域に根ざしたカフェ「RISE」のブランディングと集客力向上を目的とした公式Webサイト。店舗の雰囲気、こだわりのコーヒー、居心地の良い空間を視覚的に伝え、来店意欲を高めることを目指しました。
+                        </p>
+                        <div class="solution-box">
+                            <h4>デザインアプローチ</h4>
+                            <p>温かみのある写真と洗練されたレイアウトで、「リラックスできる上質な空間」というブランドイメージを表現。訪問者が店舗の魅力を直感的に理解できる構成にしました。</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3><i class="fas fa-star"></i> 主要セクションとデザインの工夫</h3>
+                        <div class="features-grid">
+                            <div class="feature-detail">
+                                <div class="feature-number">01</div>
+                                <h4>トップページ</h4>
+                                <p>店内の開放的な雰囲気を伝えるファーストビュー。来店したくなるような空間デザインを前面に配置しました。</p>
+                            </div>
+                            <div class="feature-detail">
+                                <div class="feature-number">02</div>
+                                <h4>メニューページ</h4>
+                                <p>COFFEE、FOOD、OTHERの3カテゴリーで構成。見やすいレイアウトで商品とこだわりを伝えます。</p>
+                            </div>
+                            <div class="feature-detail">
+                                <div class="feature-number">03</div>
+                                <h4>ABOUTセクション</h4>
+                                <p>コーヒーへのこだわりと店舗のストーリーを、魅力的な写真とともに紹介。共感を生むコンテンツ設計。</p>
+                            </div>
+                            <div class="feature-detail">
+                                <div class="feature-number">04</div>
+                                <h4>アクセス・お問い合わせ</h4>
+                                <p>Googleマップ連携で店舗への行き方を明確に。お問い合わせフォームで気軽なコンタクトを実現。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3><i class="fas fa-paint-brush"></i> デザインコンセプト</h3>
+                        <div class="design-principles">
+                            <div class="principle-item">
+                                <h4>ビジュアル設計</h4>
+                                <ul>
+                                    <li>大きな写真で店舗の雰囲気を直感的に伝達</li>
+                                    <li>温かみのある色調で親しみやすさを表現</li>
+                                    <li>余白を活かしたゆとりのあるレイアウト</li>
+                                    <li>木目調とナチュラルトーンで統一感を演出</li>
+                                </ul>
+                            </div>
+                            <div class="principle-item">
+                                <h4>UX設計</h4>
+                                <ul>
+                                    <li>シンプルなナビゲーションで迷わせない導線</li>
+                                    <li>モバイルファーストのレスポンシブデザイン</li>
+                                    <li>読み込み速度を重視した画像最適化</li>
+                                    <li>CTAボタンを適切に配置して予約・問い合わせを促進</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3><i class="fas fa-heart"></i> このプロジェクトに込めた想い</h3>
+                        <p class="thought-text">
+                            カフェというのは、単にコーヒーを提供する場所ではなく、人々が心地よく過ごせる「第三の場所」だと考えています。このWebサイトを通じて、訪れる前から「行ってみたい」と思わせる、そんな期待感を創り出すことを目指しました。<br><br>
+                            オーナーのこだわりと店舗の魅力を最大限に引き出し、地域コミュニティに愛されるカフェのデジタルな顔として機能することが、このプロジェクトの意義だと感じています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- プロジェクト2終了 -->
+
+        </div>
+    </section>
+
+    <!-- Skillsセクション -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Skills</span>
+                <h2 class="section-title">使用ツールとスキルセット</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>UI/UXデザイン</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-figma"></i> Figma</li>
+                        <li><i class="fas fa-bezier-curve"></i> Adobe XD</li>
+                        <li><i class="fas fa-image"></i> Sketch</li>
+                        <li><i class="fas fa-pen-fancy"></i> Illustrator</li>
+                        <li><i class="fas fa-photo-video"></i> Photoshop</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>フロントエンド</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-react"></i> React (基礎)</li>
+                        <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>デザインプロセス</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-search"></i> ユーザーリサーチ</li>
+                        <li><i class="fas fa-user-check"></i> ペルソナ設計</li>
+                        <li><i class="fas fa-sitemap"></i> 情報設計</li>
+                        <li><i class="fas fa-drafting-compass"></i> ワイヤーフレーム</li>
+                        <li><i class="fas fa-vial"></i> ユーザビリティテスト</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>思考とマインド</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-lightbulb"></i> 課題発見力</li>
+                        <li><i class="fas fa-chart-line"></i> 論理的思考</li>
+                        <li><i class="fas fa-users"></i> ユーザー視点</li>
+                        <li><i class="fas fa-sync-alt"></i> 継続的改善</li>
+                        <li><i class="fas fa-comments"></i> コミュニケーション</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contactセクション -->
+    <section id="contact" class="contact section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-description">
+                    プロジェクトのご相談やご質問など、お気軽にお問い合わせください
+                </p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">件名 <span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> 送信する
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>your.email@example.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fab fa-twitter"></i>
+                        <h4>Twitter</h4>
+                        <p>@yourhandle</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fab fa-github"></i>
+                        <h4>GitHub</h4>
+                        <p>github.com/yourusername</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 UI Designer Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
