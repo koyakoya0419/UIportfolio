@@ -1,6 +1,5 @@
-// ========================================
+
 // DOM要素の取得
-// ========================================
 const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
@@ -14,9 +13,8 @@ const contactForm = document.getElementById('contactForm');
 const tabBtns = document.querySelectorAll('.tab-btn');
 const projectContents = document.querySelectorAll('.project-content');
 
-// ========================================
+
 // プロジェクトタブ切り替え
-// ========================================
 tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         const projectId = btn.dataset.project;
@@ -37,9 +35,8 @@ tabBtns.forEach(btn => {
     });
 });
 
-// ========================================
+
 // ナビゲーション制御
-// ========================================
 
 // スクロール時のナビバー背景変更
 window.addEventListener('scroll', () => {
@@ -93,9 +90,8 @@ navLinks.forEach(link => {
     });
 });
 
-// ========================================
+
 // 画像スライダー機能
-// ========================================
 let currentSlide = 0;
 const totalSlides = slides.length;
 
@@ -188,9 +184,7 @@ document.addEventListener('keydown', (e) => {
 // スライダー初期化
 createDots();
 
-// ========================================
 // スクロールアニメーション
-// ========================================
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -217,9 +211,7 @@ animateElements.forEach(element => {
     observer.observe(element);
 });
 
-// ========================================
 // コンタクトフォーム送信処理
-// ========================================
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
@@ -346,9 +338,7 @@ document.querySelectorAll('img[data-src]').forEach(img => {
     imageObserver.observe(img);
 });
 
-// ========================================
 // スクロールトップボタン（オプション）
-// ========================================
 const scrollTopBtn = document.createElement('button');
 scrollTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
 scrollTopBtn.className = 'scroll-top-btn';
@@ -401,9 +391,7 @@ scrollTopBtn.addEventListener('mouseleave', () => {
     scrollTopBtn.style.transform = 'translateY(0) scale(1)';
 });
 
-// ========================================
-// 初期化完了メッセージ
-// ========================================
+
 console.log('🎨 Portfolio Site Initialized');
 console.log('📱 Responsive Design Active');
 console.log('✨ Smooth Animations Enabled');
