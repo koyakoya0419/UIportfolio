@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="スイミングスクール1ヶ月おためし教室 - 月額4,400円で安心スタート!生後6ヶ月から始められる水泳教室">
+    <title>1ヶ月おためし教室 | スイミングスクール</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-swimming-pool"></i>
+                    <span>スイミングスクール</span>
+                </div>
+                <a href="#contact" class="header-cta">
+                    <i class="fas fa-phone"></i>
+                    <span>お問い合わせ</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ファーストビュー -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>今だけ入会金無料キャンペーン中!</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-title-main">1ヶ月おためし教室で</span>
+                    <span class="hero-title-sub">安心スタート!</span>
+                </h1>
+                <p class="hero-description">
+                    生後6ヶ月から始められる、初めてのお子様でも安心の水泳教室。<br>
+                    指導歴42年以上の実績と資格保有コーチが丁寧に指導します。
+                </p>
+                <div class="hero-price">
+                    <div class="hero-price-label">1ヶ月おためし料金</div>
+                    <div class="hero-price-amount">
+                        <span class="hero-price-value">4,400</span>
+                        <span class="hero-price-unit">円</span>
+                        <span class="hero-price-tax">(税込)</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#search" class="btn btn-primary btn-large">
+                        <i class="fas fa-search"></i>
+                        <span>教室を検索する</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-large">
+                        <i class="fas fa-envelope"></i>
+                        <span>お申し込み</span>
+                    </a>
+                </div>
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>振替無制限</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fas fa-medal"></i>
+                        <span>資格保有コーチ</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>安全管理徹底</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 検索セクション -->
+    <section id="search" class="search-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-search"></i>
+                    おためし教室を検索
+                </h2>
+                <p class="section-description">
+                    お子様の生年月日・学年・希望曜日を入力して、通えるクラスを確認しましょう
+                </p>
+            </div>
+            <div class="search-box">
+                <div class="search-form">
+                    <div class="form-group">
+                        <label for="birthdate">
+                            <i class="fas fa-birthday-cake"></i>
+                            生年月日
+                        </label>
+                        <input type="date" id="birthdate" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="grade">
+                            <i class="fas fa-graduation-cap"></i>
+                            現在の学年
+                        </label>
+                        <select id="grade" class="form-control" required>
+                            <option value="">選択してください</option>
+                            <option value="baby">ベビー(生後6ヶ月〜3歳)</option>
+                            <option value="preschool">幼児(3〜6歳)</option>
+                            <option value="elementary1">小学1〜2年生</option>
+                            <option value="elementary2">小学3〜4年生</option>
+                            <option value="elementary3">小学5〜6年生</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <i class="fas fa-calendar-week"></i>
+                            通いたい曜日(複数選択可)
+                        </label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="day" value="mon">
+                                <span>月</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="day" value="tue">
+                                <span>火</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="day" value="wed">
+                                <span>水</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="day" value="thu">
+                                <span>木</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="day" value="fri">
+                                <span>金</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="day" value="sat">
+                                <span>土</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="day" value="sun">
+                                <span>日</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" id="searchBtn" class="btn btn-primary btn-large btn-block">
+                        <i class="fas fa-search"></i>
+                        検索する
+                    </button>
+                </div>
+                <div id="searchResult" class="search-result" style="display: none;">
+                    <div class="result-content">
+                        <div class="result-icon"></div>
+                        <div class="result-title"></div>
+                        <div class="result-description"></div>
+                        <a href="#contact" class="btn btn-primary">お申し込みへ進む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- おためし教室の概要 -->
+    <section class="overview-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-info-circle"></i>
+                    おためし教室の概要
+                </h2>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-yen-sign"></i>
+                    </div>
+                    <h3 class="overview-title">料金</h3>
+                    <p class="overview-price">4,400円<span>(税込)</span></p>
+                    <p class="overview-description">1ヶ月間お試しいただける特別価格</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="overview-title">期間</h3>
+                    <p class="overview-price">1ヶ月間<span>(週1回)</span></p>
+                    <p class="overview-description">4回のレッスンで水泳の楽しさを体験</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="overview-title">対象</h3>
+                    <p class="overview-price">生後6ヶ月〜<span>小学生</span></p>
+                    <p class="overview-description">年齢・レベルに応じたクラス編成</p>
+                </div>
+                <div class="overview-card highlight">
+                    <div class="overview-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="overview-title">特典</h3>
+                    <p class="overview-price">入会金<span>無料!</span></p>
+                    <p class="overview-description">おためし後の入会で通常11,000円が0円</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-swimmer"></i>
+                    </div>
+                    <h3 class="overview-title">持ち物</h3>
+                    <p class="overview-items">
+                        水着・キャップ<br>タオル
+                    </p>
+                    <p class="overview-description">初回は体験用レンタルもあり</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スクールの特徴 -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i>
+                    選ばれる5つの理由
+                </h2>
+                <p class="section-description">
+                    42年以上の実績と信頼。安心して通える環境をご提供します
+                </p>
+            </div>
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">指導歴42年以上の実績</h3>
+                        <p class="feature-description">
+                            昭和57年の開校以来、多くのお子様に水泳指導を行ってきた実績があります。長年培ったノウハウで、お子様一人ひとりに合わせた丁寧な指導を行います。小学校の学習指導要領に沿ったカリキュラムで、クロール・平泳ぎを最短で習得できます。
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">業界一の振替制度</h3>
+                        <p class="feature-description">
+                            お休みされた場合、追加費用なし・期限無制限・回数無制限で振替レッスンを受けることができます。お子様の体調や予定の変更に柔軟に対応できるので、無理なく続けられます。※安全面を考慮して定員制限がございます。
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">褒めて伸ばす指導方針</h3>
+                        <p class="feature-description">
+                            できるだけ簡単な目標設定から始め、成功体験を積み重ねることで自信をつけていきます。たくさん褒められて水泳が上達したお子様は、水泳以外でも目標達成能力が向上します。集団練習を通じて、協調性やマナーも身につきます。
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">徹底した安全・衛生管理</h3>
+                        <p class="feature-description">
+                            公認水泳コーチ(日本水泳連盟)、水泳教師(日本スイミングクラブ協会)、日本赤十字社水上安全法救助員が多数在籍。定期的なAED研修も実施しています。トルマリンマイナスイオン水を使用し、アトピー・敏感肌のお子様にも優しい水質です。
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">05</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">資格保有コーチ多数在籍</h3>
+                        <p class="feature-description">
+                            日本水泳連盟公認コーチ、日本スイミングクラブ協会認定教師など、豊富な資格を持つプロフェッショナルが指導します。定期的な指導研修で常にスキルアップを図り、質の高いレッスンを提供しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- レッスンの流れ -->
+    <section class="flow-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-stream"></i>
+                    レッスンの流れ
+                </h2>
+                <p class="section-description">
+                    1回約60分のレッスンの流れをご紹介します
+                </p>
+            </div>
+            <div class="flow-timeline">
+                <div class="flow-item">
+                    <div class="flow-number">STEP 1</div>
+                    <div class="flow-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <h3 class="flow-title">受付・着替え</h3>
+                    <p class="flow-time">約10分</p>
+                    <p class="flow-description">
+                        受付を済ませて更衣室で着替えます。貴重品はロッカーへ。わからないことがあればスタッフにお気軽にお声がけください。
+                    </p>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-number">STEP 2</div>
+                    <div class="flow-icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3 class="flow-title">準備体操</h3>
+                    <p class="flow-time">約5分</p>
+                    <p class="flow-description">
+                        プールサイドで準備体操。ケガ防止のため、しっかりと体をほぐします。コーチと一緒に楽しく体を動かしましょう。
+                    </p>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-number">STEP 3</div>
+                    <div class="flow-icon">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3 class="flow-title">シャワー・水慣れ</h3>
+                    <p class="flow-time">約5分</p>
+                    <p class="flow-description">
+                        シャワーを浴びて体を慣らした後、浅いプールで水に慣れる時間。初めてのお子様もゆっくりと水に親しんでいきます。
+                    </p>
+                </div>
+                <div class="flow-item highlight">
+                    <div class="flow-number">STEP 4</div>
+                    <div class="flow-icon">
+                        <i class="fas fa-swimmer"></i>
+                    </div>
+                    <h3 class="flow-title">レベル別レッスン</h3>
+                    <p class="flow-time">約45分</p>
+                    <p class="flow-description">
+                        年齢・レベルに合わせた少人数クラスでレッスン。コーチが一人ひとりの成長をしっかりサポートします。楽しく泳ぎを学びましょう。
+                    </p>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-number">STEP 5</div>
+                    <div class="flow-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3 class="flow-title">自由時間・片付け</h3>
+                    <p class="flow-time">約5分</p>
+                    <p class="flow-description">
+                        レッスン後は少し自由時間。その後シャワーを浴びて着替えます。忘れ物がないか確認して、また次回お会いしましょう!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-question-circle"></i>
+                    よくある質問
+                </h2>
+                <p class="section-description">
+                    保護者様からよく寄せられる質問にお答えします
+                </p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question"></i>
+                        <span>全く泳げなくても大丈夫ですか?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>もちろん大丈夫です!水が怖いお子様、初めてのお子様でも安心して通えるよう、水慣れから丁寧に指導します。年齢・レベルに合わせた少人数クラス編成で、一人ひとりのペースに合わせて進めていきますのでご安心ください。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question"></i>
+                        <span>保護者の見学は可能ですか?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、見学は自由です。プールサイドに見学スペースをご用意しておりますので、お子様のレッスンの様子をご覧いただけます。特に初回は不安もあるかと思いますので、ぜひ見学にいらしてください。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question"></i>
+                        <span>おためし後に入会しなくても良いですか?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>もちろんです。おためし教室は、実際のレッスンを体験していただき、お子様に合うかどうかをご判断いただくためのものです。無理な勧誘は一切いたしませんので、ご安心ください。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question"></i>
+                        <span>振替はできますか?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、おためし教室でも振替制度をご利用いただけます。お休みされた場合は、追加費用なしで他の日時に振替が可能です。ただし、安全面を考慮して定員制限がございますので、お早めにご予約ください。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question"></i>
+                        <span>兄弟割引はありますか?</span>
+                        <i class="fas fa-chevron-down faq-toggle"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、ご兄弟で入会される場合は兄弟割引がございます。おためし教室後に正式入会された際に適用されます。詳しい割引内容については、お申し込み時にご案内いたします。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お申し込み・お問い合わせ -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-envelope"></i>
+                    お申し込み・お問い合わせ
+                </h2>
+                <p class="section-description">
+                    お電話またはWebフォームからお気軽にお問い合わせください
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card phone-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="contact-title">お電話でのお申し込み</h3>
+                    <p class="contact-phone-number">
+                        <a href="tel:0120-XXX-XXX">0120-XXX-XXX</a>
+                    </p>
+                    <p class="contact-hours">
+                        <i class="far fa-clock"></i>
+                        受付時間: 平日 10:00〜20:30<br>
+                        　　　　　土曜 9:00〜20:30<br>
+                        　　　　　日曜・祝日 9:00〜17:00
+                    </p>
+                    <p class="contact-note">※木曜日は15:30〜18:30の受付となります</p>
+                </div>
+                <div class="contact-card form-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="contact-title">Webフォームでのお申し込み</h3>
+                    <p class="contact-description">
+                        24時間いつでも受付中!<br>
+                        1〜2営業日以内に担当者よりご連絡いたします。
+                    </p>
+                    <a href="#form" class="btn btn-primary btn-large">
+                        <i class="fas fa-edit"></i>
+                        申し込みフォームへ
+                    </a>
+                </div>
+            </div>
+            <div class="school-select">
+                <h3 class="school-select-title">
+                    <i class="fas fa-map-marker-alt"></i>
+                    スクールを選ぶ
+                </h3>
+                <div class="school-cards">
+                    <div class="school-card">
+                        <h4>春日井スイミングスクール</h4>
+                        <p class="school-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            愛知県春日井市
+                        </p>
+                        <a href="https://kasugai.kls.co.jp/" target="_blank" class="btn btn-outline">
+                            詳細を見る
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="school-card">
+                        <h4>西春日井スイミングスクール</h4>
+                        <p class="school-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            愛知県北名古屋市
+                        </p>
+                        <a href="https://nishikasugai.kls.co.jp/" target="_blank" class="btn btn-outline">
+                            詳細を見る
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="school-card">
+                        <h4>あま大治スイミングスクール</h4>
+                        <p class="school-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            愛知県海部郡大治町
+                        </p>
+                        <a href="https://amaoharu.kls.co.jp/" target="_blank" class="btn btn-outline">
+                            詳細を見る
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-swimming-pool"></i>
+                    <span>スイミングスクール</span>
+                </div>
+                <p class="footer-text">
+                    お子様の健やかな成長を、水泳を通してサポートします。<br>
+                    まずは1ヶ月おためし教室で、水泳の楽しさを体験してください!
+                </p>
+                <div class="footer-links">
+                    <a href="https://kasugai.kls.co.jp/" target="_blank">春日井スイミングスクール</a>
+                    <a href="https://nishikasugai.kls.co.jp/" target="_blank">西春日井スイミングスクール</a>
+                    <a href="https://amaoharu.kls.co.jp/" target="_blank">あま大治スイミングスクール</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KL Sports. All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="scroll-top" id="scrollTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
