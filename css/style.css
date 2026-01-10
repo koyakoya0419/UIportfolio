@@ -178,6 +178,7 @@ body {
 }
 
 .hero-text {
+    padding: 0,0,10px,0;
     animation: fadeInUp 1s ease-out;
 }
 
